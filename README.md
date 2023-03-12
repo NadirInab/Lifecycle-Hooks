@@ -22,15 +22,15 @@ export default {
 
  beforeCreate() {
     console.log(
-    "The vue instance is initialized, and before create hook is called !!,"
+    "The vue instance is initialized, and before create hook is called !!"
     );
-  },
+  }
 }
 </script>
 ```
 
 ```
-output : The vue instance is initialized, and before create hook is called !! . 
+output : The vue instance is initialized, and before create hook is called !!  
 ```
 
 ### created
@@ -41,21 +41,21 @@ output : The vue instance is initialized, and before create hook is called !! .
 
 <script>
 export default {
-      data() {
+    data() {
     return {
       name: "Nadir"
     };
-  },
+  }, 
 
  created() {
-    console.log(`Created hooks is called ${this.name}`);
-  },
+    console.log(`Created hooks is called : ${this.name}`);
+  }
 }
 </script>
 ```
 
 ```
-output : output : Created hooks is called : Nadir  
+output : Created hooks is called : Nadir  
 ```
 
 ### beforeMount
@@ -69,13 +69,13 @@ export default {
 
   beforeMount() {
     console.log("before mount hooked is well called !!");
-  },
+  }
 }
 </script>
 ```
 
 ```
-output :before mount hooked is well called !! . 
+output : before mount hooked is well called !!  
 ```
 ### mounted
 
@@ -88,13 +88,13 @@ export default {
 
  mounted() {
     console.log("mounted is called !!");
-  },
+  }
 }
 </script>
 ```
 
 ```
-output :mounted is called !! . 
+output :mounted is called !! 
 ```
 ### beforeUpdate
 
@@ -109,13 +109,13 @@ export default {
     console.log(
       "before updated hook is well called, wich means that changes has been done, and the Virtual DOM has not been re-rendred !!"
     );
-  },
+  }
 }
 </script>
 ```
 
 ```
-output :before updated hook is well called, wich means that changes has been done, and the Virtual DOM has not been re-rendred !! . 
+output :before updated hook is well called, wich means that changes has been done, and the Virtual DOM has not been re-rendred !! 
 ```
 ### updated
 
@@ -136,7 +136,7 @@ updated() {
 ```
 
 ```
-output :at this point updated hook is called, and Virtual DOM is well re-rendred !! . 
+output :at this point updated hook is called, and Virtual DOM is well re-rendred !!  
 ```
 ### beforeUnmount
 
@@ -151,13 +151,13 @@ beforeUnmount(){
     console.log(
         "beforeUnmount is called right before the $el is removed from the DOM "
     )
-  },
+  }
 }
 </script>
 ```
 
 ```
-output :beforeUnmount is called right before the $el is removed from the DOM. 
+output :beforeUnmount is called right before the $el is removed from the DOM
 ```
 ### unmounted
 
@@ -186,5 +186,5 @@ output :Vue instance is unmounted and removed from DOM .
 ## Feedback
 
 If you have any feedback, please reach out to me at :
-📫 :nadir.inab.dev@gmail.com 
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nadirinab/)
+- 📫 :nadir.inab.dev@gmail.com 
+- [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nadirinab/)
